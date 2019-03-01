@@ -149,17 +149,7 @@ function Renderer(person) {
             myRightArrow.innerHTML = ">";
 
 
-            // $(myAlbumImg).on("click", (event) => {
-            //     var imageId = parseInt(event.target.id);
-            //     var imageData = this.user.album.find(photo => photo.id === imageId);
-            //     var popupImage = $("<img>").attr("src", imageData.url).attr("id", imageData.id);
-            //     myOtherPop.find("img").remove();
-            //     myOtherPop.append(popupImage).show();
-            //     myOtherPop.style.display = "grid";
-            //     myOtherPop.style.position = "absolute";
-            //     // myOtherPop.append(popupImage, myNewBotton, myLeftArrow, myRightArrow);
-            // })
-
+     
 
              myAlbumImg.addEventListener("click" ,function(e){
                  myOtherPop.style.display = "grid"; 
@@ -344,11 +334,7 @@ function Renderer(person) {
         
         $(".myAlbumImg").on("click",function(){
             $(this).closest(".smallDiv").remove();
-        //   var newDiv = document.createElement("div");
-        //   this.topMainDiv.appendChild(newDiv);
-        //   newDiv.style.width = "50px";
-        //   newDiv.style.height = "50px";
-        //   newDiv.style.backgroundColor = "red";
+        
 
         });
     }

@@ -1,0 +1,129 @@
+body{
+    margin: 0, auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+*{
+    margin: 4px;
+    font-size: 33px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+ .calc-btn{
+background-color: #2e9cca;
+}
+
+.calc-contain{
+ user-select: none; 
+                                        
+      
+
+display: grid;  
+grid-template-columns: 130px 130px 130px 130px;
+grid-template-rows: repeat(7,100px);
+grid-template-areas: 
+"display display display display"
+"backspace backspace clear clear"
+ "num-seven num-eight num-nine calc-multiple"
+ "num-four num-five num-six calc-minus"
+ "num-one num-two num-three calc-plus"
+ "num-zero num-zero num-decimal calc-divide"
+ "calc-equal calc-equal calc-equal calc-equal";
+      
+}
+  #display{
+    grid-area: display;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: normal;
+    background-color: #9fedd7;
+    border-top-left-radius: 50px;
+    
+  }
+  #backspace {
+    grid-area: backspace;
+  }
+  #numClear {
+    grid-area: clear;
+  }
+  #num-seven {
+    grid-area: num-seven;
+  }
+  #num-eight{
+    grid-area: num-eight;
+  }
+  #num-nine {
+    grid-area: num-nine;
+  }
+  #calc-multiple {
+    grid-area: calc-multiple;
+  }
+  #num-four {
+    grid-area: num-four;  
+}
+#num-five{
+    grid-area: num-five;
+  }
+  #num-six {
+    grid-area: num-six;
+  }
+  #calc-minus {
+    grid-area: calc-minus;
+  }
+  #num-one {
+    grid-area: num-one;
+  }
+  #num-two{
+    grid-area:num-two ;
+  }
+  #num-three {
+    grid-area:num-three ;
+  }
+  #calc-plus {
+    grid-area:calc-plus ;
+  }
+  #num-zero {
+    grid-area:num-zero ;
+  }
+  #num-decimal{
+    grid-area:num-decimal ;
+  }
+  #calc-divide {
+    grid-area:calc-divide ;
+  }
+  #calc-equal {
+    grid-area:calc-equal ;
+    border-bottom-right-radius: 50px;
+    
+  }
+  
+  * .calc-contain  :hover {
+   color:white;
+   /* background-color: black; */
+  font-size: 45px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.equ{
+    background-color: #e85a4f;
+    
+}
+
+.operator{
+  background-color: #edeae5;
+}
+
+.calc-operator{
+  background-color: ;
+}
+
+  
+
